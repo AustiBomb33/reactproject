@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Container } from 'react-bootstrap';
 const Header = ({ title = "No Title Set" }) => {
     return (
         <header>
-            <Jumbotron>
-                <h1>{title}</h1>
+            <Jumbotron class="jumbotron-short">
+                <Container>
+                    <h1>{title}</h1>
+                </Container>
             </Jumbotron>
         </header>
     );
