@@ -10,7 +10,6 @@ const Home = () => {
             <Container>
                 <h2>Welcome to my website</h2>
                 <p>This site is my React.JS Project for my COMP2068 class</p>
-                <p>Click the About link, or <a href="/About">here</a>, to see more of what this is</p>
             </Container>
         </Fragment>
     )

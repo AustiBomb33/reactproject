@@ -65,7 +65,6 @@ const Data = () => {
                     break;
             }
         });
-
     }
 
     return (

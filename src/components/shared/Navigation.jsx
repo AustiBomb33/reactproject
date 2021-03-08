@@ -1,14 +1,20 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="/">Home</Navbar.Brand>
-            <Navbar.Brand href="/About">About</Navbar.Brand>
-            <Navbar.Brand href="/Products">Products</Navbar.Brand>
-        </Navbar>
+        <ul className="nav">
+            <li>
+                <Link to="/" className="nav-link">Home</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/About" className="nav-link">About</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/Products" className="nav-link">Products</Link>
+            </li>
+        </ul>
     );
 }
 
